@@ -3,6 +3,7 @@ import pymongo
 import json
 from dataclasses import dataclass
 import os,sys   
+from sensor.config import mongo
 # Provide the localhost url to connect mongo db to pyhon
 
 @dataclass
