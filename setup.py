@@ -15,7 +15,7 @@ def get_requirements()->List[str]:
     # Replacing \n at the end of every package name
     requirement_list = [requirement_name.replace("\n", "") for requirement_name in requirement_list]
 
-    # Removing -e ., required for installing the code as a package, will trigger the setup.py file
+    # Removing -e . since its not a package, required for installing the code as a package, will trigger the setup.py file
     if HYPHEN_E_DOT in requirement_list:
         requirement_list.remove(HYPHEN_E_DOT)
     return requirement_list
