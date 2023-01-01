@@ -26,5 +26,5 @@ if __name__ == "__main__":
     # origin is only a variable, we can name the remote variable as anything as we want
     # git add remote repo_link https://github.com/vishhy/aps-fault-detection.git
 
-# Input in ML by Ineuron: Configuration
-# Output in ML by Industry: Artifact
+# Input to ML by Ineuron: Configuration
+# Output geenrated by ML Training Pipeline by Industry in the form of Trained Model, Training Milestone or file: Artifact
