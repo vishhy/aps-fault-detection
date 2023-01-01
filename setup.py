@@ -1,3 +1,5 @@
+## setup.py file will turn our code into a python package. Thus, we can install that code on any device through pip
+
 from setuptools import find_packages, setup
 from typing import List
 
@@ -22,6 +24,6 @@ setup(
     version="0.0.1",
     author="vishwas",
     author_email="sharma.vishwas7788@gmail.com",
-    packages=find_packages(),
+    packages=find_packages(),    # Any folder containing __int__.py is considered as Python Package/Library
     install_requires=get_requirements()
 )
