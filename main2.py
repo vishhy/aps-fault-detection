@@ -4,9 +4,12 @@ import sys,os
 
 def test_logger_and_exception():
     try:
+        logging.info("Starting the Test Logger Exception")
         result = 3/0
         print(result)
+        logging.info("Stopping the Test Logger Exception")
     except Exception as e:
+        logging.debug(str(e))
         raise SensorException(e, sys)
 
 if __name__ == "__main__":
